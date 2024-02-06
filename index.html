@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | News homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .width {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 650px) {
+      .width {
+        width: 90%;
+      }
+
+      .sm-h1-font {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .sm-h2-font {
+        font-size: 2rem;
+      }
+
+      .sm-h6-font {
+        font-size: 1rem;
+      }
+
+      .sm-p-font {
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (max-width: 360px) {
+      .sm-h2-font {
+        display: none;
+      }
+
+      .sm-h6-font {
+        font-size: 1rem;
+      }
+
+      .sm-p-font {
+        font-size: 14px;
+      }
+    }
+
+    @font-face {
+      font-family: Inter;
+      src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    }
+
+    .inter-font {
+      font-family: Inter;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+    }
+
+    h6 {
+      font-size: 1.1rem;
+    }
+
+    .extrabold-800 {
+      font-weight: 800;
+    }
+
+    .p-line-height {
+      line-height: 26px;
+    }
+
+    .soft-orange {
+      color: hsl(35, 77%, 62%);
+    }
+
+    .soft-red {
+      background-color: hsl(5, 85%, 63%);
+    }
+
+    .off-white {
+      color: hsl(36, 100%, 99%);
+    }
+
+    .grayish-blue {
+      color: hsl(233, 8%, 79%);
+    }
+
+    .dark-grayish-blue {
+      color: hsl(236, 13%, 42%);
+    }
+
+    .very-dark-blue {
+      color: hsl(240, 100%, 5%);
+    }
+
+    .very-dark-blue-bg {
+      background-color: hsl(240, 100%, 5%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container py-4 py-md-5 inter-font width">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg pb-4 pb-md-5" style="background-color: white; margin-left: -8px; margin-right: -8px;">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo.svg" alt="logo"></a>
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class=""><img src="./assets/images/icon-menu.svg" alt="menu icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 250px;">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title mb-5 pb-5" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><img src="./assets/images/icon-menu-close.svg" alt="close icon"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-0">
+              <li class="nav-item pe-4">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item pe-4">
+                <a class="nav-link" href="#new">New</a>
+              </li>
+              <li class="nav-item pe-4">
+                <a class="nav-link" href="#popular">Popular</a>
+              </li>
+              <li class="nav-item pe-4">
+                <a class="nav-link" href="#trending">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-0" href="./index.html">Categories</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Top Section -->
+    <div class="container-fluid pb-2">
+      <div class="row g-5">
+        <div class="col-xl-8 col-lg-12 pe-0 pe-xl-4 ps-0">
+          <div id="popular" class="row pb-2">
+            <div class="d-none d-sm-block">
+              <img src="./assets/images/image-web-3-desktop.jpg" alt="building blocks" class="img-fluid d-block">
+            </div>
+            <div class="d-sm-none">
+              <img src="./assets/images/image-web-3-mobile.jpg" alt="building blocks" class="img-fluid d-block">
+            </div>
+          </div>
+          <div class="row pt-4 g-3">
+            <div class="col-12 col-lg-6 pe-5">
+              <h1 class="m-0 extrabold-800 sm-h1-font" style="line-height: 1;">The Bright Future of Web 3.0?
+              </h1>
+            </div>
+            <div class="col-lg-6 pe-3 d-flex flex-column justify-content-between">
+              <p class="dark-grayish-blue">We dive into the next evolution of the web that claims to put the power of
+                the platforms back into the
+                hands of the
+                people. But is it really fulfilling its promise?</p>
+              <button class="soft-red off-white border-0"
+                style="height: 4.5vh; width: 17vh; letter-spacing: 2.5px; font-size: 15px;">READ MORE</button>
+            </div>
+          </div>
+        </div>
+        <div id="new" class="col-xl-4 very-dark-blue-bg off-white">
+          <div class="row py-4">
+            <h2 class="soft-orange fw-bold">New</h2>
+          </div>
+          <div class="row pb-3">
+            <h5 class="fw-bold pb-1">Hydrogen VS Electric Cars</h5>
+            <p class="grayish-blue pb-2 p-line-height">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <hr>
+          </div>
+          <div class="row pb-3">
+            <h5 class="fw-bold">The Downsides of AI Artistry</h5>
+            <p class="grayish-blue pb-2 p-line-height">What are the possible adverse effects of on-demand AI image
+              generation?</p>
+            <hr>
+          </div>
+          <div class="row">
+            <h5 class="fw-bold">Is VC Funding Drying Up?</h5>
+            <p class="grayish-blue p-line-height">Private funding by VC firms is down 50% YOY. We take a look at what
+              that means.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div id="trending" class="row my-xl-5 my-1 py-4 g-4">
+      <div class="col-xl-4 pe-lg-4">
+        <div class="row">
+          <div class="col-4 px-0">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="retro computer" class="img-fluid d-block">
+          </div>
+          <div class="col">
+            <div class="row">
+              <h2 class="grayish-blue pb-1 sm-h2-font">01</h2>
+            </div>
+            <div class="row">
+              <h6 class="extrabold-800 pb-1 sm-h6-font">Reviving Retro PCs</h6>
+            </div>
+            <div class="row">
+              <p class="dark-grayish-blue p-line-height sm-p-font">What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 pe-lg-4">
+        <div class="row">
+          <div class="col-4 px-0">
+            <img src="./assets/images/image-top-laptops.jpg" alt="laptop keyboard" class="img-fluid d-block">
+          </div>
+          <div class="col">
+            <div class="row">
+              <h2 class="grayish-blue pb-1 sm-h2-font">02</h2>
+            </div>
+            <div class="row">
+              <h6 class="extrabold-800 pb-1 sm-h6-font">Top 10 Laptops of 2022</h6>
+            </div>
+            <div class="row">
+              <p class="dark-grayish-blue p-line-height sm-p-font">Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="row">
+          <div class="col-4 px-0">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="gaming controller" class="img-fluid d-block">
+          </div>
+          <div class="col">
+            <div class="row">
+              <h2 class="grayish-blue pb-1 sm-h2-font">03</h2>
+            </div>
+            <div class="row">
+              <h6 class="extrabold-800 pb-1 sm-h6-font">The Growth of Gaming</h6>
+            </div>
+            <div class="row">
+              <p class="dark-grayish-blue p-line-height sm-p-font">How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of OUTER Container -->
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Elizabeth Trotter</a>.
+    </div>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
