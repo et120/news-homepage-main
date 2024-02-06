@@ -63,5 +63,9 @@ How they work:
 
 ### Peer review
 
-**Name:** Caleb Sylvia **Date/ Time:** 2/6/2024 10:57 AM
-**Comment(s):** Site looks exactly like the protype and full responsive. Very clean code nice and simple great job! Only suggestion is making sure the button for the "READ MORE" has some more padding within so the background is bigger to match prototype.
+> **Name:** Caleb Sylvia **Date/ Time:** 2/6/2024 10:57 AM
+> **Comment(s):** 
+> Site looks exactly like the protype and full responsive. Very clean code nice and simple great job! Only suggestion is making sure the button for the "READ MORE" has some more padding within so the background is bigger to match prototype.
+
+**Issue(s) Resolved:**
+- [x] Adding additional padding on height of "READ MORE" button
