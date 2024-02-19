@@ -21,7 +21,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 Users should be able to:
 
 - [x] View the optimal layout for the interface depending on their device's screen size
-- [ ] See hover and focus states for all interactive elements on the page (after reviewing protoype docs, some functionality was missed)
+- [ ] See hover and focus states for all interactive elements on the page *(after reviewing protoype docs on 2/19/24, some functionality was missed)*
 
 ### Screenshot
 
